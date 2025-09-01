@@ -57,3 +57,40 @@
 .res-logo {
     width: 100%;
 }
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    margin: 4px;
+    width: 200px;
+    height: 350px;
+    background-color: #f1f1f1;
+}
+
+.login{
+    margin-right: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: rgb(196, 202, 255);
+}
+
+.filter {
+    display: flex;
+}
+
+.search {
+    margin: 15px;
+}
+.error {
+    display:flex ;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
