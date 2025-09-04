@@ -94,3 +94,10 @@
     align-items: center;
     text-align: center;
 }
+
+.user-card {
+    padding: 10px;
+    width: 450px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}

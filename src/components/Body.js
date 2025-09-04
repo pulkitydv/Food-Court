@@ -2,12 +2,12 @@ import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = function () {
   const [listOfRestaurants, setlistOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [btnName, setBtnName] = useState("Top Rated Restaurants");
-
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
@@ -87,7 +87,10 @@ const Body = function () {
 
       <div className="res-container">
         {filteredRestaurant.map((restaurant) => (
-          <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}>
+          <Link
+            key={restaurant.info.id}
+            to={"/restaurants/" + restaurant.info.id}
+          >
             <RestaurantCard resData={restaurant} />
           </Link>
         ))}
