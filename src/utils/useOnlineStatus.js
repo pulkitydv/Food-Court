@@ -13,7 +13,6 @@ const useOnlineStatus = () => {
     return () => {
       window.removeEventListener("online", goOnline);
       window.removeEventListener("offline", goOffline);
-      console.log("chl gya");
     };
   }, []);
 
