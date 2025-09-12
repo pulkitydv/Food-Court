@@ -16,7 +16,9 @@ const Body = function () {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch("/api/restaurants");
+    const data = await fetch(
+      Restro_Api
+    );
 
     const json = await data.json();
 
@@ -42,6 +44,7 @@ const Body = function () {
   return (
     <div className="body">
       <div className="filter flex ">
+
         <div className="p-4 m-3">
           <input
             type="text"
